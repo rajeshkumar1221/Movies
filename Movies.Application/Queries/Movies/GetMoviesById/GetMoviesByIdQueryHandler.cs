@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Movies.Contract.Responses;
 using Movies.InfraStructure;
 
-namespace Movies.Application.Queries.Movies.GetMovies
+namespace Movies.Application.Queries.Movies.GetMoviesById
 {
     public class GetMoviesByIdQueryHandler : IRequestHandler<GetMovieByIdQuery, GetMovieByIdResponse>
     {

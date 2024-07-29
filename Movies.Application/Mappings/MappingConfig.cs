@@ -10,6 +10,9 @@ namespace Movies.Application.Mappings
         {
             TypeAdapterConfig<List<Movie>, GetMovieResponse>.NewConfig()
                 .Map(dest => dest.MovieDtos, src => src);
+
+            TypeAdapterConfig<Movie, GetMovieByIdResponse>.NewConfig()
+                .Map(dest => dest.movieDto, src => src);
         }
 
     }
