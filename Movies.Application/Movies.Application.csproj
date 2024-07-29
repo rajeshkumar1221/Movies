@@ -14,7 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\Movies\CreateMovie\" />
     <Folder Include="Commands\Movies\DeleteMovie\" />
     <Folder Include="Commands\Movies\UpdateMovie\" />
     <Folder Include="Queries\Movies\GetMoviesById\" />
