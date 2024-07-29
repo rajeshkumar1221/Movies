@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using Movies.Application;
 using Movies.InfraStructure;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,8 @@ builder.Services.AddDbContext<MoviesDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("MoviesConnectionString"));
 });
+
+builder.Services.AddApplication();
 
 var app = builder.Build();
 

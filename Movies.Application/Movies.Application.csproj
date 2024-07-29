@@ -6,4 +6,23 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Mapster" Version="7.4.0" />
+    <PackageReference Include="Mapster.DependencyInjection" Version="1.0.1" />
+    <PackageReference Include="MediatR" Version="12.4.0" />
+    <PackageReference Include="MediatR.Contracts" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\Movies\CreateMovie\" />
+    <Folder Include="Commands\Movies\DeleteMovie\" />
+    <Folder Include="Commands\Movies\UpdateMovie\" />
+    <Folder Include="Queries\Movies\GetMoviesById\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Movies.Contract\Movies.Contract.csproj" />
+    <ProjectReference Include="..\Movies.InfraStructure\Movies.InfraStructure.csproj" />
+  </ItemGroup>
+
 </Project>
