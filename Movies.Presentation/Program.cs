@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Movies.Application;
 using Movies.InfraStructure;
+using Movies.Presentation.Modules;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,8 +30,5 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
-
-app.MapControllers();
-
+app.AddMoviesEndPoints();
 app.Run();

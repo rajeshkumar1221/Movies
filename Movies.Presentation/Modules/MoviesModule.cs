@@ -10,7 +10,7 @@ namespace Movies.Presentation.Modules
 {
     public static class MoviesModule
     {
-        public static void GetMoviesEndPoints(this IEndpointRouteBuilder app)
+        public static void AddMoviesEndPoints(this IEndpointRouteBuilder app)
         {
             app.MapGet("/api/movies/", async (IMediator mediator, CancellationToken ct) =>
             {
