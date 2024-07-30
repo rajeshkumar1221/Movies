@@ -14,11 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\Movies\DeleteMovie\" />
-    <Folder Include="Commands\Movies\UpdateMovie\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Movies.Contract\Movies.Contract.csproj" />
     <ProjectReference Include="..\Movies.InfraStructure\Movies.InfraStructure.csproj" />
   </ItemGroup>
